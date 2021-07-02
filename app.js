@@ -15,6 +15,7 @@ let seattle ={
 
     numOfCustPerH:[],
     fillNumOfCustH:function () {
+      console.log("fillNumOfCustH");
       for(let i=0;i<houres.length;i++){
         let min = Math.ceil(this.minCust);
         let max = Math.floor(this.maxCust);
@@ -33,20 +34,26 @@ let seattle ={
         this.numOfCookiesPerH.push(Math.ceil(purchesedCoockPerH))
       }
       console.log(this.numOfCookiesPerH);
-    }
+      
+    },
 
+    // render:function() {
+    //   let divContainer = document.getElementById('container');
+      // let h2El = document.createElement('h2')
+      // divContainer.appendChild(h2El);
+      // let ulEl = document.createElement('ul');
+      // divContainer.appendChild(ulEl);
+      // for(let i=0;i<houres.length;i++){
+
+      // }
+    // }
+    
 
   }
 
  console.log(seattle);
- console.log("fillNumOfCustH");
- console.log(this.numOfCustPerH);
-
+ 
  seattle.fillNumOfCustH();
  seattle.fillNumOfCookiesH();
- //console.log(seattle)
- //console.log(seattle.bigO.maher)
-// seattle.calcRandCustPerH();
-// seattle.calAvgCookiesPerH();
-// seattle.render();
+//  seattle.render();
 
