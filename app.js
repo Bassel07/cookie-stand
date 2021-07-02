@@ -3,6 +3,8 @@
 
 let houres = ['6am', '7am', '8am', '9am', '10am', '11am', '12am', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm',];
 
+console.log(houres)
+
 // shop location
 
 let seattle ={
@@ -10,11 +12,9 @@ let seattle ={
     minCust : 23,
     maxCust : 65,
     avgCookieSale : 6.3,
+
     numOfCustPerH:[],
     fillNumOfCustH:function () {
-      //console.log(houres[12])
-      console.log("fillNumOfCustH");
-      console.log(this.numOfCustPerH);
       for(let i=0;i<houres.length;i++){
         let min = Math.ceil(this.minCust);
         let max = Math.floor(this.maxCust);
@@ -23,6 +23,7 @@ let seattle ={
       }
       console.log(this.numOfCustPerH);
     },
+
     numOfCookiesPerH:[],
     fillNumOfCookiesH:function () {
       console.log("fillNumOfCookiesH");
@@ -37,9 +38,10 @@ let seattle ={
 
   }
 
+ console.log(seattle);
+ console.log("fillNumOfCustH");
+ console.log(this.numOfCustPerH);
 
-
- //console.log(seattle);
  seattle.fillNumOfCustH();
  seattle.fillNumOfCookiesH();
  //console.log(seattle)
