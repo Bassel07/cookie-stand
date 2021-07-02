@@ -12,7 +12,7 @@ let seattle ={
     avgCookieSale : 6.3,
     numOfCustPerH:[],
     fillNumOfCustH:function () {
-      console.log(houres[12])
+      //console.log(houres[12])
       console.log("fillNumOfCustH");
       console.log(this.numOfCustPerH);
       for(let i=0;i<houres.length;i++){
@@ -27,13 +27,10 @@ let seattle ={
     fillNumOfCookiesH:function () {
       console.log("fillNumOfCookiesH");
       for(let j=0;j<houres.length;j++){
-        
         let purchesedCoockPerH = 
         this.avgCookieSale * this.numOfCustPerH[j];
         this.numOfCookiesPerH.push(Math.ceil(purchesedCoockPerH))
-
       }
-
       console.log(this.numOfCookiesPerH);
     }
 
