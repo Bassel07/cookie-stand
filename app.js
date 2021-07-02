@@ -12,48 +12,53 @@ let seattle ={
     minCust : 23,
     maxCust : 65,
     avgCookieSale : 6.3,
+    sumTotal : 0,
 
     numOfCustPerH:[],
     fillNumOfCustH:function () {
-      console.log("fillNumOfCustH");
+      //console.log("fillNumOfCustH");
       for(let i=0;i<houres.length;i++){
         let min = Math.ceil(this.minCust);
         let max = Math.floor(this.maxCust);
         let randNum = Math.floor(Math.random() * (max - min) + min)
         this.numOfCustPerH.push(randNum)
       }
-      console.log(this.numOfCustPerH);
+     // console.log(this.numOfCustPerH);
     },
 
     numOfCookiesPerH:[],
     fillNumOfCookiesH:function () {
-      console.log("fillNumOfCookiesH");
+     // console.log("fillNumOfCookiesH");
       for(let j=0;j<houres.length;j++){
         let purchesedCoockPerH = 
         this.avgCookieSale * this.numOfCustPerH[j];
         this.numOfCookiesPerH.push(Math.ceil(purchesedCoockPerH))
       }
-      console.log(this.numOfCookiesPerH);
+     // console.log(this.numOfCookiesPerH);
       
     },
 
-    // render:function() {
-    //   let divContainer = document.getElementById('container');
-      // let h2El = document.createElement('h2')
-      // divContainer.appendChild(h2El);
-      // let ulEl = document.createElement('ul');
-      // divContainer.appendChild(ulEl);
-      // for(let i=0;i<houres.length;i++){
-
-      // }
-    // }
+    render:function() {
+      console.log('unorderedlist')
+      let divContainer = document.getElementById('container');
+      let h1El = document.createElement("h3")
+      let testInH2=document.createTextNode("form render method")
+      h1El.appendChild(testInH2)
+      divContainer.appendChild(h1El);
+      let ulEl = document.createElement('ul');
+      for(let i=0;i<this.numOfCookiesPerH.length;i++){
+        let liEl = document.createElement('li');
+        let textInLi=document.createTextNode(i);
+        liEl.appendChild(textInLi);
+        ulEl.appendChild(liEl);
+      }
+      divContainer.appendChild(ulEl);
+     }
     
 
   }
 
- console.log(seattle);
- 
  seattle.fillNumOfCustH();
  seattle.fillNumOfCookiesH();
-//  seattle.render();
+ seattle.render();
 
