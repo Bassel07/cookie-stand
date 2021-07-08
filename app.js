@@ -143,6 +143,26 @@ creatFooter();
 
 
 
+let shopForm = document.getElementById('shopform');
+shopForm.addEventListener('submit',addshop);
+
+function addshop(event) {
+  event.preventDefault();
+
+  let shopName = event.target.shopName.value;
+  let minCustomers = event.target.minCust.value;
+  let maxCustomers = event.target.maxCust.value;
+  let avg = event.target.avgCookies.value;
+
+  let newShop = new Shop (shopName, minCustomers, maxCustomers, avg);
+  newShop.calcRandCustPerH();
+  newShop.calAvgCookiesPerH();
+
+  newShop.render();
+  console.log(newShop);
+}
+
+
 
 
 
