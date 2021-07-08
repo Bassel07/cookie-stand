@@ -1,0 +1,141 @@
+body {
+    /* background-image: url("img/fish0.jpg"); */
+    background-color: #0fb2e4;
+    /* position: fixed; */
+    /* top: 0;
+    left: 0;
+    
+    min-height: 100%;
+    min-width: 1024px;
+    opacity: 0.4;
+    z-index: -1; */
+   }
+
+   header{
+    background-color: rgb(225, 238, 238);
+    top: 0%;
+   
+    margin: 0%;
+    font-family:monospace;
+    /* background-color:; */
+    /* width: 100%; */
+    /* height: fit-content; */
+    padding-left: 1%;
+    text-align: center;
+    font-size: xx-large;
+    
+}
+
+nav{
+  margin-top: 10px;
+  padding: 1px;
+  
+}
+
+nav ul li {
+  display: inline-block;
+  padding-left: 3%;
+  
+  
+
+}
+
+nav ul li a{
+  font-size: 22px;
+  text-decoration: none;
+  color: #4C4C6D;
+  display: inline-block;
+  font-family: fantasy;
+  
+  
+}
+
+h4{
+  font-size: 150%;
+  font-family: cursive;
+  padding-left: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  
+}
+
+.ourstory{
+  height: 200px;
+}
+
+#first{
+  display: inline-block;
+  
+}
+#first img{
+  float: left;
+}
+#first p{
+  float: right;
+  width: 60%;
+  padding-right: 20%;
+}
+
+#second{
+  display: inline-block
+}
+
+
+#second img{
+  float:left;
+  
+  width: 300px;
+  ;
+  
+
+}
+#second p{
+  float: right;
+  width: 33%;
+  padding-right: 29%;
+}
+#third{
+  display: inline-block;
+}
+#third img{
+  float: left;
+  width: 29%;
+
+}
+#third p{
+  float: right;
+  width: 65%;
+  padding-right: 20%;
+}
+#left{
+  float: left;
+  width: 70%;
+  font-size: 23PX;
+}
+  
+#rigth p{
+  font-size: 20px;
+}
+#rigth h2{
+  font-size: 30px;
+  padding: 5%;
+}
+
+
+#rigth{
+  float: right;
+  width: 23%;
+  margin-top: 3%;
+}
+#right h2{
+  color:#FFE194 ;
+  font-size: px;
+}
+
+footer{
+  padding: 5%;
+  clear: both;
+  height:20%;
+  /* background-color: #B8DFD8; */
+}
+
